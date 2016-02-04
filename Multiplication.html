@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var table = "<table border='1'>";
+
+        for (var i = 2; i < 30; i++) {
+            table += "<tr>";
+            for (var j = 1; j < 19; j++) {
+                table += "<td>" + i + "x" + j + " = " + i * j + "</td>";
+//                document.write(i + ' x ' + j + ' = ' + i * j + ' ');
+            }
+            table += "</tr>";
+            //            document.write("<br>");
+        }
+        table += "</table>";
+        document.write(table);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

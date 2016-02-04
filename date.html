@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var whatDay = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+        var date1 = new Date();
+        document.write("Today is " + whatDay[date1.getDay()] + "<br>");
+        document.write("Millisecond since 1970-01-01: " + date1.getTime() + "<br>");
+        var getMilli = date1.getTime();
+        document.write(getMilli + "millsecond <br>"
+                     + Math.round(getMilli / 1000) + "sec <br>"
+                     + Math.round(getMilli / 1000 / 60) + "min <br>"
+                     + Math.round(getMilli / 1000 / 60 / 60) + "hour <br>"
+                     + Math.round(getMilli / 1000 / 60 / 60 / 24) + "day <br>"
+                     + Math.round(getMilli / 1000 / 60 / 60 / 24 / 365) + "year <br>"
+                     );
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

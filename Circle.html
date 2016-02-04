@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var circle = new Object();
+        circle.color = "red";
+        circle.diameter = 100;
+        circle.radius = function () {
+            var n = this.diameter / 2;
+            return n;
+        }
+        document.write(circle.color + "/" + circle.diameter + "/" + circle.radius() + "<br>");
+        circle["color"] = "blue";
+        circle.diameter = 40;
+        document.write(circle.color + "/" + circle.diameter + "/" + circle.radius() + "<br>");
+
+        document.write(circle+"<br>");
+
+        document.write(circle[0] + "<br>"); // undefined
+        document.write(circle[1] + "<br>"); // undefined
+        document.write(circle[2] + "<br>"); // undefined
+
+        for (var i in circle) {
+            document.write(i + "<br>");
+            document.write(circle[i] + "<br>");
+            // blue
+            // 40
+            // function () { var n = this.diameter / 2; return n; }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
