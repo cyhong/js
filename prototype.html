@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var Circle = function (c, d) {
+            this.color = c;
+            this.diameter = d;
+
+        }
+        Circle.prototype.radius = function (n) {
+            return n / 2;
+        }
+        var green_circle = new Circle("green", 10);
+        document.write(green_circle.radius(10));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
