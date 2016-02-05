@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{border:1px solid red;}
+    </style>
+    <script>
+        function view() {
+            alert("Clicked-2");
+        }
+        function loadEnd1() {
+            alert("Load1");
+        }
+        window.addEventListener('load', loadEnd1);
+    </script>
+</head>
+<body>
+    <div onclick="javascript:alert('Clicked')">Click</div>
+    <div onclick="javascript:view()">Click</div>
+</body>
+</html>
