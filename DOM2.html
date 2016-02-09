@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        window.onload = function () {
+            var gebid = document.getElementById("menu");
+            var gebidA = gebid.getElementsByTagName("a");
+            var result = gebidA[0].parentNode.parentNode.id + "\n";
+            result += gebidA[0].parentNode.nextSibling.nextSibling.firstChild + "\n";
+            result += gebid.lastChild.previousSibling.className;
+
+            alert(result);
+            gebidA[0].onclick = function () {
+                this.parentNode.style.backgroundColor = "red";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <ul id="menu">
+            <li><a href="#a">content 1</a></li>
+            <li><a href="#b">content 2</a></li>
+            <li class="last"><a href="#c">content 3</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        window.onload = function () {
+            var result = "";
+            var content = document.getElementById("content");
+            var menu = document.getElementsByClassName("menu");
+            var ul = document.getElementsByTagName("ul");
+            var txt = document.getElementsByName("txt");
+
+            alert(menu.item(0).nodeValue);
+            alert(ul.item(0).nodeValue);
+            alert(txt.item(0).valueOf(0));
+
+            result += content + "\n";
+            result += menu + "\n";
+            result += ul + "\n";
+            result += txt;
+            alert(result);
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <div id="content">
+        <ul class="menu">
+            <li>content 1</li>
+            <li>content 2</li>
+        </ul>
+     
+        <ul class="menu">
+            <li>content 1</li>
+            <li>content 2</li>
+        </ul>
+        <ul>
+            <li>content 1</li>
+            <li>content 2</li>
+        </ul>
+        <input type="text" name="txt" value="Java Script"/>
+        <input type="text" name="txt" value="JQuery"/>
+    </div>
+</body>
+</html>
